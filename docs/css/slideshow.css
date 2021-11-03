@@ -1,0 +1,44 @@
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.slidecontainer{
+   position: relative;
+    margin: auto;
+  
+}
+.slide img{
+    width: 600px;
+    height: 500px;
+}
+
+.effect{
+    animation-name: effect;
+    animation-duration: 1s;
+}
+
+@keyframes effect {
+  from {
+    opacity:0.3;
+  } 
+  
+  to{
+      opacity: 1;
+  }
+}
+.dot-container{
+    text-align: center;
+ 
+}
+span{
+    border-radius: 50%;
+   height: 15px; 
+   width: 15px;
+   background-color: blueviolet;
+   display: inline-block;
+
+}
+.active{
+   background-color: rgb(59, 22, 94); 
+}
