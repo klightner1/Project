@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src= "js/navbar.js" defer></script>
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/pagedesign.css">
+    <script src= "js/slideshow.js" defer></script>
+    <title>Contact Us</title>
+<style>
+    div{
+            color: rgb(109, 31, 182);
+            font-family: sans-serif;
+        }
+        form{
+            width: 1000px;
+  border: 10px solid blueviolet;
+  padding: 50px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+        }
+        input, textarea{
+            width: 50%;
+            padding: 12px;
+        }
+        button{
+            border-color: blueviolet;
+            background-color: rgb(229, 213, 243);
+
+        }
+        .button{
+            color:rgb(109, 31, 182);
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+</style>
+</head>
+<body>
+   <nav>
+       <div class= "logo">
+            <h4>
+                <a href="index.html"> Sport Climbing</a>
+            </h4>
+       </div>
+       <ul class= "nav-links">
+           <li>
+               <a href="history.html">History</a>
+            </li>
+           <li>
+               <a href="athletes.html">Athletes</a>
+            </li>
+           <li>
+               <a href="highlights.html">Highlights</a>
+            </li>
+            <li>
+                <a href="contactus.html">Contact Us</a>
+             </li>
+             <li>
+                <a href="sitemap.html">Sitemap</a>
+             </li>
+
+       </ul>
+       <div class="burger">
+           <div class="line1"></div>
+           <div class="line2"></div>
+           <div class="line3"></div>
+       </div>
+   </nav>
+   <br>
+   <br>
+   <h1>Contact Us</h1>
+   <br>
+<p>
+    If you leave us your first and last name, your email address, and your comments below, we will get back to you ASAP!
+    <br>
+    <form method="post" action="https://oim-apis.herokuapp.com/form2">
+<div>
+    <Label for="lastname">Last Name:</Label>
+    <br>
+        <input 
+    type="text"
+    name="lastname"
+    id="lastname"
+    >
+</div>
+&nbsp;
+<div>
+    <Label for="firstname">First Name:</Label>
+    <br>
+    <input 
+    type="text"
+    name="firstname"
+    id="firstname"
+   >
+</div>
+&nbsp;
+<div>
+    <Label for="email">Email:</Label>
+    <br>
+    <input 
+    type="email"
+    name="email"
+    id="email"
+   >
+</div>
+&nbsp;
+<div>
+    <label for="comments"> Leave a Reply:</label>
+</div>
+<div>
+    <textarea 
+    name="comments"
+    id="comments" 
+    cols="25"
+    rows="4"
+    ></textarea>
+</div>
+<br>
+<br>
+<button type="submit">  
+    <div class="button">
+        Submit
+    </div> 
+</button> 
+<button type="reset">
+    <div class="button">
+         Reset
+    </div>
+</button>
+
+    </form>
+</p>
+</body>
+</html>
