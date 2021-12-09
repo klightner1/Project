@@ -9,7 +9,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color:blueviolet ;
+    background-color:blueviolet;
     font-family: sans-serif;
 }
 
@@ -28,7 +28,7 @@ nav{
 .nav-links{
    display: flex; 
    justify-content: space-around;
-   width: 50%;
+   width: 70%;
 
 }
 .nav-links li{
@@ -40,6 +40,7 @@ nav{
    text-decoration: none;
    letter-spacing: 3px;
    font-weight: bold;
+   font-size: 16px;
 }
 .burger{
     display: none;
@@ -77,7 +78,7 @@ nav{
         transition: transform 0.5s ease-in;
 }
 
-.navlinks li{
+.nav-links li{
     opacity: 0;
 }
 
@@ -99,6 +100,6 @@ nav{
 
     to{
         opacity: 1;
-        transform: translateX(0px)
+        transform: translateX(0px);
     }
 }
