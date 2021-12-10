@@ -7,6 +7,8 @@
 nav{
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    z-index: 100;
     align-items: center;
     min-height: 8vh;
     background-color:blueviolet;
@@ -63,6 +65,9 @@ nav{
 @media screen and (max-width: 768px){
     body{
         overflow-x: hidden;
+    }
+    nav{
+        max-width: 100%;
     }
     .nav-links{
         position: absolute;
