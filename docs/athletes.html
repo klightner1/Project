@@ -37,7 +37,18 @@ img{
      max-width: 100%;
      height: auto;
     }
+button{
+        border-color: blueviolet;
+        background-color: rgb(229, 213, 243);
+        align-items: center;
+
+        }
+ .button table{
+        color:rgb(109, 31, 182);
+        font-family: sans-serif;
+        font-size: 15px;
     }
+}
 
 </style>
 
@@ -84,15 +95,13 @@ img{
 </p>
     <table>
 <tr> 
-    <th> ADAM ONDRA </th>
+    <th id="ap"> ADAM ONDRA </th>
     <br>
     <br>
   <td> <img src="img/adamprofile.jpg" alt="Adam Ondra">
    <br>
    <br>
-   Adam Ondra is a Czech professional rock climber, specializing in lead climbing and bouldering. 
-   Rock & Ice magazine described Ondra in 2013 as a prodigy and the leading climber of his generation.
-   Ondra is the only male athlete to have won World Championship titles in both disciplines in the same year (2014), and he is also the only male athlete to have won the World Cup series in both disciplines (lead climbing in 2009, 2015 and 2019, and bouldering in 2010).
+   <button id= "button1"><div class="button">Click Here to Read Adam's Profile</div></button>
 </td>
    <br>
     <br>
@@ -100,44 +109,64 @@ img{
 </tr>
     <br>
     <br>
-    <th> JANJA GARNBRET </th>
+    <th id="jp"> JANJA GARNBRET </th>
     <br>
     <br>
     <td><img src="img/janja2.jpg" alt="Janja Garnbret">
     <br>
     <br>
-    Janja Garnbret is a Slovenian rock climber and sport climber who has won multiple lead climbing and bouldering events. 
-    In 2021, she became the first ever female Olympic gold medalist in sport climbing, and is widely regarded as the greatest competitive climber of all time.
-    Garnbret won her first international title in the lead competition at the 2014 World Youth B Championships. 
-    In July 2015, just after turning 16, she started competing in the senior category of the Lead Climbing World Cup.
-     Since then, she participated in 35 Lead Climbing World Cup events, missing the podium in only four of them.
-      In 2016, aged 17, Garnbret won the seasonal titles of the IFSC Climbing World Cup in lead and combined, World Championships in lead climbing, and World Youth A Championships in both lead climbing and bouldering. 
-      From 2016 to 2018, she was awarded the seasonal title in both lead climbing and combined disciplines.
-       In both 2018 and 2019, she won the World Championships in bouldering and combined, and also reclaimed the lead title in 2019. 
-       The same year, Garnbret became the first athlete to win all bouldering World Cup events in a season. 
-       Throughout six events, she placed first in six qualifications, four semifinals, and six finals, topping 74 out of 78 boulder problems overall.
+    <button id= "button2"><div class="button">Click Here to Read Janja's Profile</div></button>
     </td>
     <br>
     <br>
 <tr>
     <br>
     <br>
-   <th> TOMOA NARASAKI </th>
+   <th id="tp"> TOMOA NARASAKI </th>
   
     <br>
     <br>
     <td><img src="img/tomoa.png" alt="Tomoa Narasaki">
     <br>
     <br>
-    Tomoa Narasaki (楢﨑 智亜) is a Japanese professional sport climber and boulderer.
-    He started climbing when he was 10 years old together with Sachi Amma, in Sachi’s family climbing gym. 
-    Previously, he had been training apparatus gymnastics.
-     In 2016, he won both the Bouldering World Championship and the Bouldering World Cup and in 2019 he won the Bouldering World Cup.
-     His younger brother Meichi Narasaki is also a professional sport climber.
+    <button id= "button3"><div class="button">Click Here to Read Tomoa's Profile</div></button>
     </td>
      <br>
     <br>
 </tr>
-</table>    
+</table>
+<script>
+const adam = document.getElementById("button1");
+const janja = document.getElementById("button2");
+const tomoa = document.getElementById("button3");
+
+adam.onclick = function(){
+    adam.innerHTML = "Adam Ondra is a Czech professional rock climber, specializing in lead climbing and bouldering. Rock & Ice magazine described Ondra in 2013 as a prodigy and the leading climber of his generation. Ondra is the only male athlete to have won World Championship titles in both disciplines in the same year (2014), and he is also the only male athlete to have won the World Cup series in both disciplines (lead climbing in 2009, 2015 and 2019, and bouldering in 2010)."
+    adam.style.color = "rgb(109, 31, 182)";
+    adam.style.fontFamily = "sans-serif";
+    adam.style.fontSize = "15px";
+    adam.style.backgroundColor = "rgb(229, 213, 243)"
+    adam.style.border = "none";
+    document.getElementById("ap").innerHTML = "ADAM ONDRA'S PROFILE"
+}
+janja.onclick = function(){
+    janja.innerHTML = " Janja Garnbret is a Slovenian rock climber and sport climber who has won multiple lead climbing and bouldering events. In 2021, she became the first ever female Olympic gold medalist in sport climbing, and is widely regarded as the greatest competitive climber of all time.Garnbret won her first international title in the lead competition at the 2014 World Youth B Championships. In July 2015, just after turning 16, she started competing in the senior category of the Lead Climbing World Cup. Since then, she participated in 35 Lead Climbing World Cup events, missing the podium in only four of them. In 2016, aged 17, Garnbret won the seasonal titles of the IFSC Climbing World Cup in lead and combined, World Championships in lead climbing, and World Youth A Championships in both lead climbing and bouldering. From 2016 to 2018, she was awarded the seasonal title in both lead climbing and combined disciplines. In both 2018 and 2019, she won the World Championships in bouldering and combined, and also reclaimed the lead title in 2019. The same year, Garnbret became the first athlete to win all bouldering World Cup events in a season. Throughout six events, she placed first in six qualifications, four semifinals, and six finals, topping 74 out of 78 boulder problems overall."
+    janja.style.color = "rgb(109, 31, 182)";
+    janja.style.fontFamily = "sans-serif";
+    janja.style.fontSize = "15px";
+    janja.style.backgroundColor = "rgb(229, 213, 243)"
+    janja.style.border = "none";
+    document.getElementById("jp").innerHTML = "JANJA GARNBRET'S PROFILE"
+}
+tomoa.onclick = function(){
+    tomoa.innerHTML = "Tomoa Narasaki (楢﨑 智亜) is a Japanese professional sport climber and boulderer. He started climbing when he was 10 years old together with Sachi Amma, in Sachi’s family climbing gym. Previously, he had been training apparatus gymnastics. In 2016, he won both the Bouldering World Championship and the Bouldering World Cup and in 2019 he won the Bouldering World Cup. His younger brother Meichi Narasaki is also a professional sport climber."
+    tomoa.style.color = "rgb(109, 31, 182)";
+    tomoa.style.fontFamily = "sans-serif";
+    tomoa.style.fontSize = "15px";
+    tomoa.style.backgroundColor = "rgb(229, 213, 243)"
+    tomoa.style.border = "none";
+    document.getElementById("tp").innerHTML = "TOMOA NARASAKI'S PROFILE"
+}
+</script>   
 </body>
 </html>
