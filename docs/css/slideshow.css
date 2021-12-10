@@ -42,3 +42,8 @@ span{
 .active{
    background-color: rgb(59, 22, 94); 
 }
+@media screen and (max-width: 768px){
+.slide img{
+    max-width: 100%;
+}
+}
