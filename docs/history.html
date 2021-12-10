@@ -63,7 +63,7 @@
 <br>
 
 <p>
-    <img src="img/BDE_1159.jpg" alt="Kai Climbing"  height="600px">
+    <img src="img/BDE_1159.jpg" alt="Kai Climbing"  height="600px" width= "400px" id="kai">
     <br>
     <br>
     Competitive climbing is an indoor competitive sport where the players need to climb the artificial walls. 
@@ -77,7 +77,7 @@
    <br>
    <br>
    <br>
-   <img src="img/competitive_climbing.jpg" alt="Speed" height="600px">
+   <img src="img/competitive_climbing.jpg" alt="Speed" height="600px" width = "800px" id="speed">
    <br>
    <br>
    <br>
@@ -92,8 +92,59 @@
     <br>
     <br>
    <br>
-   <img src="img/climbers-against-cancer-golden-piton-600.jpg" alt="CAC" height="600px">
+   <img src="img/climbers-against-cancer-golden-piton-600.jpg" alt="CAC" height="600px" width ="800px" id="cac">
    <br>
    <br>
     Both as a recreational activity and as a competitive sport, competitive climbing is presently one of the popular sports. Today more than 75 countries actively participate in different worldwide competitive climbing events which include popular events like World Championship and the Youth Championship.
-</p>
+</p> 
+<script>
+  function enlargeKai() {
+ kai.height= kai.height*1.75;
+ kai.width= kai.width*1.75;
+ 
+}
+function shrinkKai ()  {
+ kai.height= kai.height/1.75;
+ kai.width= kai.width/1.75;
+ 
+}
+function enlargeSpeed() {
+ speed.height= speed.height*1.5;
+ speed.width= speed.width*1.5;
+} 
+function shrinkSpeed () {
+ speed.height= speed.height/1.5;
+ speed.width= speed.width/1.5;
+ 
+}
+function enlargeCAC () {
+ cac.height= cac.height*1.25;
+ cac.width= cac.width*1.25;
+ 
+}
+function shrinkCAC () {
+ cac.height= cac.height/1.25;
+ cac.width= cac.width/1.25;
+ 
+}  
+document.getElementById("kai").onmouseover= function() {
+    enlargeKai ('kai')
+}
+    document.getElementById("kai").onmouseout= function() {
+    shrinkKai ('kai')
+  }
+  document.getElementById("speed").onmouseover= function() {
+    enlargeSpeed ('speed')
+}
+    document.getElementById("speed").onmouseout= function() {
+    shrinkSpeed ('speed')
+  }
+  document.getElementById("cac").onmouseover= function() {
+    enlargeCAC ('cac')
+}
+    document.getElementById("cac").onmouseout= function() {
+    shrinkCAC ('cac')
+  }
+</script>
+</body>
+</html>
